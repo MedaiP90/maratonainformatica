@@ -18,9 +18,11 @@ function sendRequest(pr, p) {
       // access data
       success: function(data, textStatus, jqXHR){
           var json = JSON.parse(JSON.stringify(data));
-          if(json.status == 400) {
+          if(json.code == 0) {
+            $('#type').text("");
             $('#solutions').text('Richiesta non corretta: compila tutti i campi');
-          } else if(json.status == 404) {
+          } else if(json.code == 4) {
+            $('#type').text("");
             $('#solutions').text('Nessuna soluzione trovata');
           } else {
             var t = json.type, s = json.solutions;
