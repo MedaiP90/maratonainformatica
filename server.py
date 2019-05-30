@@ -19,11 +19,11 @@ def json_solution():
         pp = request.args.get('pp')
         result = predictor.GetSolution(problem, pp)
         if len(result['solutions']) > 0:
-            result['state'] = 200
+            result['code'] = 200
         else:
-            result['state'] = 404
+            result['code'] = 4
     except:
-        result['state'] = 400
+        result['code'] = 0
     return d(result)
     
 # avvio server flask
