@@ -1,0 +1,23 @@
+﻿Type,Description
+C1,Classification
+L1,KIT non consegnato
+L2,Materiale errato/sbagliato - Wrong/incorrect material
+L3,Materiale mancante a bulk/kanban - Bulk/kainban material missing
+L4,Materiale mancante a KIT - Material missing in KIT
+M,Metodo - Method
+R1,Organizzazione e assemblaggio - Organization and assembly
+S1,Modulo preassemblato in ritardo - Preassembled mdule in delay
+S2,Materiale mancante a magazzino - Material missing in warehouse
+S3,Operazione / modulo preassemblato incompleto - Incomplete operation/pr
+R2,Ingegneria - Design
+T,Attrezzatura - Tool
+TR,Testrun issue
+E1,Materiale elettrico non consegnato - Electrical material not delivered
+E2,Materiale elettrico sbagliato - Wrong electrical material
+E3,Materiale elettrico mancante - Electrical material missing
+S4,Materiale non conforme/danneggiato - NC/damended material
+A5,Materiale smarrito - Lost material
+A3,Errata esecuzione attività (es. montaggio/posizionamento/lavorazione)
+A4,Errata/Mancante compilazione o registrazione dati - Wrong/missing data
+A9,Ritardo consegna attività - Activity delivery delayed
+I,Mancanza informazioni/documentazione - Missing info or documentation
