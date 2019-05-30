@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problema - Soluzione</title>
+        <meta name="author" content="Leonardo Cossutta, Isacco Zinna">
+        <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/w3.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/send.js"></script>
+    </head>
+    <body class="w3-center">
+        <div class="w3-container w3-light-gray w3-round-large w3-margin w3-padding-16 w3-border w3-border-deep-orange">
+            <h2>Cerca soluzione</h2>
+            <p><input type="text" id="problem" class="w3-input" placeholder="Inserisci problema" /></p>
+            <p><select id="pp" class="w3-select" name="pp">
+                <option value="" disabled selected>Scegli una opzione</option>
+                <option value="HP">Heavy preassembly</option>
+                <option value="AA">Main assembly</option>
+                <option value="SC">Scarichi</option>
+                <option value="AL">Alberi</option>
+                <option value="TB">Turbine</option>
+                <option value="TR">Test run</option>
+                <option value="IS">Inspection</option>
+                <option value="W26_AS">Assembly W26</option>
+                <option value="CEB">Pressatura blocchi</option>
+                <option value="PL">Prima di produzione</option>
+                <option value="SB">Sub assembly</option>
+            </select></p>
+            <p><input type="button" id="enter" class="w3-button" value="Cerca" /></p>
+            <p>Tipo di problema individuato: <strong id="type"></strong></p>
+            <p><div class="w3-container" id="solutions">
+
+            </div></p>
+        </div>
+    </body>
+</html>
