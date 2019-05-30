@@ -34,7 +34,8 @@ class get_solutions:
         solutions_notem = solutions.loc[solutions['PP'] == pp]
         solutions_empty = solutions.loc[solutions['PP'] == None] 
         solutions = pd.concat([solutions_notem, solutions_empty])
-        result['solutions'] = solutions['SOLUTIONS'] # aggiorno il dizionario
+        result['solutions'] = solutions['SOLUTIONS'].tolist() # aggiorno il dizionario
         tpd = self.tp.loc[self.tp['Type'] == predict] # estraggo la riga corrispondente al tipo
-        result['type'] = tpd['Description'] # aggiorno il dizionario
+        type_list = tpd['Description'].tolist()
+        result['type'] = type_list[0] # aggiorno il dizionario
         return result
